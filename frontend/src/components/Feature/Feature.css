@@ -1,0 +1,73 @@
+/* Feature container */
+.feature {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5; /* Background color of the feature section */
+  margin: 30px auto;
+}
+
+.feature h1 {
+  font-size: 2em;
+  margin-bottom: 40px; /* Increased margin for better spacing */
+  color: #333;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the items */
+  align-items: stretch; /* Ensures items stretch to the same height */
+  gap: 20px; /* Space between items */
+}
+
+.explore-feature-list {
+  flex: 1; /* Allows the item to grow and shrink based on the container size */
+  max-width: 32%; /* Ensures each item takes up at most 32% of the container's width */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  padding: 20px; /* Adds padding around each item */
+  background-color: #fff; /* Adds a white background for better contrast */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  text-align: left; /* Aligns the text to the left */
+  display: flex; /* Use flexbox for internal alignment */
+  flex-direction: column; /* Aligns children vertically */
+  justify-content: space-between; /* Space out children to align bottom */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Adds transition for hover effect */
+}
+
+.explore-feature-list:hover {
+  transform: translateY(-10px); /* Lifts the card up slightly on hover */
+  background-color: #f0f8ff; /* Changes background color on hover */
+}
+
+.feature-image {
+  width: 100%; /* Makes the image take up the full width of its container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Ensures the image is displayed as a block element */
+  margin: 0 auto 20px; /* Centers the image horizontally and adds space below the image */
+  border-radius: 10px; /* Adds rounded corners */
+}
+
+.explore-feature-list h2 {
+  margin-top: 0; /* Removes default top margin */
+  margin-bottom: 10px; /* Adds space below the heading */
+  color: #333;
+  font-size: 1.5em;
+}
+
+.explore-feature-list p {
+  margin-top: 0; /* Removes default top margin */
+  color: #666;
+  font-size: 1em;
+  flex-grow: 1; /* Ensures the paragraph takes up available space */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .feature-list {
+    flex-direction: column; /* Stacks the items vertically on small screens */
+  }
+  .explore-feature-list {
+    max-width: 100%; /* Allows the items to take up full width on small screens */
+    margin-bottom: 20px; /* Adds space between stacked items */
+  }
+}

@@ -1,0 +1,61 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffeb00; /* Background color matching the provided design */
+    padding: 40px; /* Padding around the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    margin: 30px auto; /* Center the container with some margin */
+    max-width: 1200px; /* Maximum width of the container */
+  }
+  
+  .about-image {
+    width: 50%; /* Half the width of the container */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between image and text content */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  .about-content {
+    width: 50%; /* Half the width of the container */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .about-content h1 {
+    font-size: 2.5em; /* Large font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark color for the heading */
+  }
+  
+  .about-content p {
+    font-size: 1.2em; /* Font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: #333; /* Dark color for the paragraph */
+  }
+  
+  .about-content button {
+    background-color: #333; /* Dark background for the button */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 1em; /* Font size for the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect for background color */
+  }
+  
+  .about-content button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      text-align: center; /* Center align text on small screens */
+    }
+    .about-image, .about-content {
+      width: 100%; /* Full width for image and content on small screens */
+      margin-right: 0; /* Remove right margin for the image */
+    }
+  }
+  

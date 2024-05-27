@@ -1,0 +1,33 @@
+.how-it-works {
+    background-color: #f7f9fc;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .step {
+    width: 30%;
+  }
+  
+  .step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
